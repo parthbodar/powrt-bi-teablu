@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1010.1202                               -->
+<workbook original-version='18.1' source-build='2019.4.0 (20194.19.1010.1202)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='score (cricket)' inline='true' name='federated.0m1q4px1s38zxm1do4heq1dukksk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1:3307' name='mysql.00scdoo1x61uh4117tteh1z0iqma'>
+            <connection class='mysql' dbname='cricket' odbc-native-protocol='' one-time-sql='' port='3307' server='127.0.0.1:3307' source-charset='' username='parthbodar' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.00scdoo1x61uh4117tteh1z0iqma' name='score' table='[score]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Player Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player Name]</local-name>
+            <parent-name>[score]</parent-name>
+            <remote-alias>Player Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='1' name='LROOT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runs</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Runs]</local-name>
+            <parent-name>[score]</parent-name>
+            <remote-alias>Runs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wickets</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Wickets]</local-name>
+            <parent-name>[score]</parent-name>
+            <remote-alias>Wickets</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Matches</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Matches]</local-name>
+            <parent-name>[score]</parent-name>
+            <remote-alias>Matches</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[score]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='1' name='LROOT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bowler Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bowler Name]</local-name>
+            <parent-name>[score]</parent-name>
+            <remote-alias>Bowler Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='1' name='LROOT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.481894' measure-ordering='alphabetic' measure-percentage='0.518106' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='score (cricket)' name='federated.0m1q4px1s38zxm1do4heq1dukksk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1q4px1s38zxm1do4heq1dukksk'>
+            <column datatype='integer' name='[Matches]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Runs]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Wickets]' role='measure' type='quantitative' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Matches]' derivation='Sum' name='[sum:Matches:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Runs]' derivation='Sum' name='[sum:Runs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Wickets]' derivation='Sum' name='[sum:Wickets:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1q4px1s38zxm1do4heq1dukksk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1q4px1s38zxm1do4heq1dukksk].[sum:Matches:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1q4px1s38zxm1do4heq1dukksk].[sum:Runs:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1q4px1s38zxm1do4heq1dukksk].[sum:Wickets:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1q4px1s38zxm1do4heq1dukksk].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0m1q4px1s38zxm1do4heq1dukksk].[sum:Runs:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m1q4px1s38zxm1do4heq1dukksk].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0m1q4px1s38zxm1do4heq1dukksk].[Multiple Values]</rows>
+        <cols>([federated.0m1q4px1s38zxm1do4heq1dukksk].[none:Player Name:nk] / ([federated.0m1q4px1s38zxm1do4heq1dukksk].[none:Team:nk] / [federated.0m1q4px1s38zxm1do4heq1dukksk].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{E4D519E9-D419-4D6E-86D9-66CF2FCE7790}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0m1q4px1s38zxm1do4heq1dukksk].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0m1q4px1s38zxm1do4heq1dukksk].[:Measure Names]</field>
+            <field>[federated.0m1q4px1s38zxm1do4heq1dukksk].[none:Player Name:nk]</field>
+            <field>[federated.0m1q4px1s38zxm1do4heq1dukksk].[none:Team:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FBF7315E-66BF-4369-BD90-9C9CBF3BDD41}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
